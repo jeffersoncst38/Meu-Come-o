@@ -1,0 +1,19 @@
+custo_refeicao =  50.0
+porcentagem_imposto = 5.75
+porcetagem_gorgeta = 15
+
+
+valor_imposto = round(custo_refeicao * porcentagem_imposto /100, 2)
+custo_total_refeicao = round(custo_refeicao + valor_imposto, 2)
+
+valor_gorgeta = round(custo_total_refeicao * porcetagem_gorgeta /100, 2)
+
+
+valor_total = custo_total_refeicao + valor_gorgeta
+
+print('Custo da Refeicao: R$',custo_refeicao)
+print('Porcentagem de Imposto sobre o custo da Refeição: R$',portcentagem_imposto,'%')
+print('Valor dos impostos: R$',valor_imposto)
+print('Custo Total da refeicao =  Imposto: R$',custo_total_refeicao)
+print('Valor da Gorgeta: R$',valor_gorgeta)
+print('Valor total da Refeicao (custo da refeicao = impostos = gorgeta): R$',valor_total)
